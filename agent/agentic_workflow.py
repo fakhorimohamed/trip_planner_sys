@@ -33,7 +33,7 @@ class GraphBuilder():
     
     
     def agent_function(self,state: MessagesState):
-        """Main agent function"""
+        """This is the main agent function"""
         user_question = state["messages"]
         input_question = [self.system_prompt] + user_question
         response = self.llm_with_tools.invoke(input_question)
